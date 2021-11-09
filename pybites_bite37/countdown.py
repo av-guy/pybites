@@ -7,6 +7,11 @@ def countdown_for(start=10):
 def countdown_recursive(start=10):
     if start <= 0:
         return start
+    print(start)
     countdown_recursive(start=start-1)
     if start == 1:
         print('time is up')
+
+
+if __name__ == "__main__":
+    countdown_recursive()
